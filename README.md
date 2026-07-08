@@ -4,6 +4,18 @@ C# WinForms üzerinde **GStreamer** entegrasyonunu gösteren basit ve genişleti
 
 RTSP / UDP / kamera yayını testleri, prototip geliştirme ve GStreamer'ı .NET tarafında öğrenmek için tasarlanmıştır.
 
+## Ekran Görüntüleri
+
+Uygulama açıldığında:
+
+![Açılış ekranı](docs/screenshot-initial.png)
+
+`videotestsrc` pipeline'ı çalışırken — video, VideoOverlay ile doğrudan form paneline çiziliyor:
+
+![Pipeline çalışırken](docs/screenshot-playing.png)
+
+> Ekran görüntüleri Linux üzerinde **Mono** ile alınmıştır (sink olarak `xvimagesink` kullanıldı). Uygulama Windows'ta `d3dvideosink` ile aynı şekilde çalışır.
+
 ## Özellikler
 
 - 🎬 **Serbest pipeline girişi** — `gst-launch` sözdizimindeki herhangi bir pipeline'ı textbox'a yazıp çalıştırabilirsiniz
